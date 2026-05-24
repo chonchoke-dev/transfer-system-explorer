@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer System Explorer</title>
+    <link rel="stylesheet" href="src/styles.css?v=d15-compat-1" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <div>
+          <h1>Transfer System Explorer</h1>
+          <div class="subtitle" id="sourceLine"></div>
+        </div>
+        <div class="toolbar">
+          <label class="control">
+            <span>Family</span>
+            <select id="familySelect"></select>
+          </label>
+          <label class="control">
+            <span>Group</span>
+            <select id="groupSelect"></select>
+          </label>
+          <label class="control">
+            <span>Mode</span>
+            <select id="interactionMode">
+              <option value="explore">Explore</option>
+              <option value="draft">Draft</option>
+            </select>
+          </label>
+          <label class="control">
+            <span>Filter</span>
+            <select id="typeFilter">
+              <option value="All">All</option>
+              <option value="Bisaturated">Bisaturated</option>
+              <option value="Saturated">Saturated</option>
+              <option value="Cosaturated">Cosaturated</option>
+              <option value="Normal">Normal</option>
+            </select>
+          </label>
+          <label class="control">
+            <span>View</span>
+            <select id="viewMode">
+              <option value="clean">Clean</option>
+              <option value="label">Labels</option>
+              <option value="debug">Debug</option>
+            </select>
+          </label>
+          <label class="control">
+            <span>Overlay</span>
+            <select id="overlayMode">
+              <option value="none">None</option>
+              <option value="satHull">Hull Additions</option>
+              <option value="cosatCore">Core Removals</option>
+            </select>
+          </label>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="lattice-panel" aria-label="Subgroup lattice">
+          <div class="panel-head">
+            <div>
+              <h2 id="groupTitle">D9</h2>
+              <div class="meta" id="groupMeta"></div>
+            </div>
+            <div class="legend">
+              <span><i class="swatch swatch-bisat"></i>Bisat</span>
+              <span><i class="swatch swatch-sat"></i>Sat</span>
+              <span><i class="swatch swatch-cosat"></i>Cosat</span>
+              <span><i class="swatch swatch-normal"></i>Normal</span>
+            </div>
+          </div>
+          <div class="draft-bar" id="draftBar" hidden></div>
+          <div class="svg-wrap">
+            <svg id="latticeSvg" viewBox="0 0 100 100" role="img" aria-label="Conjugacy class subgroup lattice"></svg>
+          </div>
+        </section>
+
+        <aside class="detail-panel">
+          <div class="panel-head">
+            <div>
+              <h2 id="transferTitle">Transfer</h2>
+              <div class="meta" id="transferMeta"></div>
+            </div>
+            <div class="type-pill" id="typePill"></div>
+          </div>
+          <div class="stats-grid" id="summaryStats"></div>
+          <div class="detail-section">
+            <h3>Selected Edges</h3>
+            <label class="edge-picker">
+              <span>Edge Focus</span>
+              <select id="edgePicker"></select>
+            </label>
+            <div id="edgeList" class="edge-list"></div>
+          </div>
+          <div class="detail-section draft-section" id="draftSection">
+            <h3>Draft Mode</h3>
+            <div id="draftDetail" class="draft-detail"></div>
+          </div>
+          <div class="detail-section">
+            <h3>Overlay Detail</h3>
+            <div id="overlayDetail" class="overlay-detail"></div>
+          </div>
+          <div class="detail-section">
+            <h3>Failure Explanation</h3>
+            <div id="failureDetail" class="failure-detail"></div>
+          </div>
+          <div class="detail-section">
+            <h3>Compatibility</h3>
+            <div id="compatibilityDetail" class="failure-detail"></div>
+          </div>
+          <div class="detail-section">
+            <h3>Node Detail</h3>
+            <div id="nodeDetail" class="muted">No node selected</div>
+          </div>
+        </aside>
+      </main>
+
+      <section class="family-panel">
+        <div class="panel-head">
+          <div>
+            <h2>Group Library</h2>
+            <div class="meta">Computed groups in the current local dataset</div>
+          </div>
+        </div>
+        <div class="table-wrap family-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Group</th>
+                <th>Family</th>
+                <th>SmallGroup</th>
+                <th>Order</th>
+                <th>Transfers</th>
+                <th>Sat</th>
+                <th>Cosat</th>
+                <th>Bisat</th>
+                <th>Width</th>
+                <th>Complexity</th>
+              </tr>
+            </thead>
+            <tbody id="familyRows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="table-panel">
+        <div class="panel-head">
+          <div>
+            <h2>Transfer Systems</h2>
+            <div class="meta" id="tableMeta"></div>
+          </div>
+          <div class="toolbar compact">
+            <button id="clearFocus" type="button">Clear Focus</button>
+            <button id="downloadCsv" type="button">CSV</button>
+            <button id="downloadJson" type="button">JSON</button>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Edges</th>
+                <th>Class Edges</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody id="transferRows"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+    <script type="module" src="src/app.js?v=d15-compat-1"></script>
+  </body>
+</html>

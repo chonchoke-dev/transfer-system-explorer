@@ -1,0 +1,7414 @@
+{
+  "schemaVersion": 2,
+  "group": {
+    "label": "A4",
+    "displayName": "A_4",
+    "family": "Alternating",
+    "order": 12,
+    "smallGroup": [
+      12,
+      3
+    ],
+    "groupNamesUrl": "https://people.maths.bris.ac.uk/~matyd/GroupNames/1/A4.html"
+  },
+  "provenance": {
+    "computationSource": "Scott Balchin's ninfty code",
+    "classificationSource": "Scott's ninfty.h",
+    "sourceFiles": [
+      "A4_export.json",
+      "group_data/A4.h",
+      "scripts/group_headers/A4_with_classes.h"
+    ],
+    "notes": "Browser app displays classifications, saturated hulls, and cosaturated cores emitted by ninfty; it does not redefine them."
+  },
+  "summary": {
+    "group": "A4",
+    "transferSystems": 20,
+    "computedSubset": "all",
+    "complexity": 3,
+    "generationStatistics": null,
+    "saturated": 9,
+    "saturatedComplexity": null,
+    "cosaturated": 10,
+    "cosaturatedComplexity": null,
+    "bisaturated": 3,
+    "width": 3,
+    "runtimeMs": 0
+  },
+  "classNodes": [
+    {
+      "classId": 0,
+      "label": "1",
+      "size": 1,
+      "fullSubgroupIds": [
+        0
+      ],
+      "rank": 0,
+      "x": 49.89,
+      "y": 90,
+      "layoutSource": "GroupNames TeX"
+    },
+    {
+      "classId": 1,
+      "label": "C2",
+      "size": 3,
+      "fullSubgroupIds": [
+        1,
+        2,
+        3
+      ],
+      "rank": 1,
+      "x": 49.89,
+      "y": 63.34,
+      "layoutSource": "GroupNames TeX"
+    },
+    {
+      "classId": 2,
+      "label": "C3",
+      "size": 4,
+      "fullSubgroupIds": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "rank": 1,
+      "x": 88,
+      "y": 36.56,
+      "layoutSource": "GroupNames TeX"
+    },
+    {
+      "classId": 3,
+      "label": "C2 x C2",
+      "size": 1,
+      "fullSubgroupIds": [
+        8
+      ],
+      "rank": 2,
+      "x": 12,
+      "y": 36.56,
+      "layoutSource": "GroupNames TeX"
+    },
+    {
+      "classId": 4,
+      "label": "A4",
+      "size": 1,
+      "fullSubgroupIds": [
+        9
+      ],
+      "rank": 3,
+      "x": 49.89,
+      "y": 10,
+      "layoutSource": "GroupNames TeX"
+    }
+  ],
+  "classEdges": [
+    {
+      "classEdgeId": 0,
+      "fromClass": 0,
+      "toClass": 2,
+      "fromLabel": "1",
+      "toLabel": "C3",
+      "label": "1 -> C3",
+      "fullEdges": [
+        {
+          "edgeId": 0,
+          "from": 0,
+          "to": 4,
+          "fromLabel": "1",
+          "toLabel": "C3"
+        },
+        {
+          "edgeId": 3,
+          "from": 0,
+          "to": 5,
+          "fromLabel": "1",
+          "toLabel": "C3"
+        },
+        {
+          "edgeId": 4,
+          "from": 0,
+          "to": 6,
+          "fromLabel": "1",
+          "toLabel": "C3"
+        },
+        {
+          "edgeId": 6,
+          "from": 0,
+          "to": 7,
+          "fromLabel": "1",
+          "toLabel": "C3"
+        }
+      ],
+      "possible": 4
+    },
+    {
+      "classEdgeId": 1,
+      "fromClass": 0,
+      "toClass": 1,
+      "fromLabel": "1",
+      "toLabel": "C2",
+      "label": "1 -> C2",
+      "fullEdges": [
+        {
+          "edgeId": 1,
+          "from": 0,
+          "to": 1,
+          "fromLabel": "1",
+          "toLabel": "C2"
+        },
+        {
+          "edgeId": 2,
+          "from": 0,
+          "to": 2,
+          "fromLabel": "1",
+          "toLabel": "C2"
+        },
+        {
+          "edgeId": 5,
+          "from": 0,
+          "to": 3,
+          "fromLabel": "1",
+          "toLabel": "C2"
+        }
+      ],
+      "possible": 3
+    },
+    {
+      "classEdgeId": 2,
+      "fromClass": 0,
+      "toClass": 4,
+      "fromLabel": "1",
+      "toLabel": "A4",
+      "label": "1 -> A4",
+      "fullEdges": [
+        {
+          "edgeId": 7,
+          "from": 0,
+          "to": 9,
+          "fromLabel": "1",
+          "toLabel": "A4"
+        }
+      ],
+      "possible": 1
+    },
+    {
+      "classEdgeId": 3,
+      "fromClass": 0,
+      "toClass": 3,
+      "fromLabel": "1",
+      "toLabel": "C2 x C2",
+      "label": "1 -> C2 x C2",
+      "fullEdges": [
+        {
+          "edgeId": 8,
+          "from": 0,
+          "to": 8,
+          "fromLabel": "1",
+          "toLabel": "C2 x C2"
+        }
+      ],
+      "possible": 1
+    },
+    {
+      "classEdgeId": 4,
+      "fromClass": 2,
+      "toClass": 4,
+      "fromLabel": "C3",
+      "toLabel": "A4",
+      "label": "C3 -> A4",
+      "fullEdges": [
+        {
+          "edgeId": 9,
+          "from": 4,
+          "to": 9,
+          "fromLabel": "C3",
+          "toLabel": "A4"
+        },
+        {
+          "edgeId": 14,
+          "from": 5,
+          "to": 9,
+          "fromLabel": "C3",
+          "toLabel": "A4"
+        },
+        {
+          "edgeId": 15,
+          "from": 6,
+          "to": 9,
+          "fromLabel": "C3",
+          "toLabel": "A4"
+        },
+        {
+          "edgeId": 19,
+          "from": 7,
+          "to": 9,
+          "fromLabel": "C3",
+          "toLabel": "A4"
+        }
+      ],
+      "possible": 4
+    },
+    {
+      "classEdgeId": 5,
+      "fromClass": 1,
+      "toClass": 3,
+      "fromLabel": "C2",
+      "toLabel": "C2 x C2",
+      "label": "C2 -> C2 x C2",
+      "fullEdges": [
+        {
+          "edgeId": 10,
+          "from": 1,
+          "to": 8,
+          "fromLabel": "C2",
+          "toLabel": "C2 x C2"
+        },
+        {
+          "edgeId": 12,
+          "from": 2,
+          "to": 8,
+          "fromLabel": "C2",
+          "toLabel": "C2 x C2"
+        },
+        {
+          "edgeId": 16,
+          "from": 3,
+          "to": 8,
+          "fromLabel": "C2",
+          "toLabel": "C2 x C2"
+        }
+      ],
+      "possible": 3
+    },
+    {
+      "classEdgeId": 6,
+      "fromClass": 1,
+      "toClass": 4,
+      "fromLabel": "C2",
+      "toLabel": "A4",
+      "label": "C2 -> A4",
+      "fullEdges": [
+        {
+          "edgeId": 11,
+          "from": 1,
+          "to": 9,
+          "fromLabel": "C2",
+          "toLabel": "A4"
+        },
+        {
+          "edgeId": 13,
+          "from": 2,
+          "to": 9,
+          "fromLabel": "C2",
+          "toLabel": "A4"
+        },
+        {
+          "edgeId": 17,
+          "from": 3,
+          "to": 9,
+          "fromLabel": "C2",
+          "toLabel": "A4"
+        }
+      ],
+      "possible": 3
+    },
+    {
+      "classEdgeId": 7,
+      "fromClass": 3,
+      "toClass": 4,
+      "fromLabel": "C2 x C2",
+      "toLabel": "A4",
+      "label": "C2 x C2 -> A4",
+      "fullEdges": [
+        {
+          "edgeId": 18,
+          "from": 8,
+          "to": 9,
+          "fromLabel": "C2 x C2",
+          "toLabel": "A4"
+        }
+      ],
+      "possible": 1
+    }
+  ],
+  "coverEdges": [
+    {
+      "classEdgeId": 0,
+      "fromClass": 0,
+      "toClass": 2,
+      "fromLabel": "1",
+      "toLabel": "C3",
+      "label": "1 -> C3",
+      "fullEdges": [
+        {
+          "edgeId": 0,
+          "from": 0,
+          "to": 4,
+          "fromLabel": "1",
+          "toLabel": "C3"
+        },
+        {
+          "edgeId": 3,
+          "from": 0,
+          "to": 5,
+          "fromLabel": "1",
+          "toLabel": "C3"
+        },
+        {
+          "edgeId": 4,
+          "from": 0,
+          "to": 6,
+          "fromLabel": "1",
+          "toLabel": "C3"
+        },
+        {
+          "edgeId": 6,
+          "from": 0,
+          "to": 7,
+          "fromLabel": "1",
+          "toLabel": "C3"
+        }
+      ],
+      "possible": 4
+    },
+    {
+      "classEdgeId": 1,
+      "fromClass": 0,
+      "toClass": 1,
+      "fromLabel": "1",
+      "toLabel": "C2",
+      "label": "1 -> C2",
+      "fullEdges": [
+        {
+          "edgeId": 1,
+          "from": 0,
+          "to": 1,
+          "fromLabel": "1",
+          "toLabel": "C2"
+        },
+        {
+          "edgeId": 2,
+          "from": 0,
+          "to": 2,
+          "fromLabel": "1",
+          "toLabel": "C2"
+        },
+        {
+          "edgeId": 5,
+          "from": 0,
+          "to": 3,
+          "fromLabel": "1",
+          "toLabel": "C2"
+        }
+      ],
+      "possible": 3
+    },
+    {
+      "classEdgeId": 4,
+      "fromClass": 2,
+      "toClass": 4,
+      "fromLabel": "C3",
+      "toLabel": "A4",
+      "label": "C3 -> A4",
+      "fullEdges": [
+        {
+          "edgeId": 9,
+          "from": 4,
+          "to": 9,
+          "fromLabel": "C3",
+          "toLabel": "A4"
+        },
+        {
+          "edgeId": 14,
+          "from": 5,
+          "to": 9,
+          "fromLabel": "C3",
+          "toLabel": "A4"
+        },
+        {
+          "edgeId": 15,
+          "from": 6,
+          "to": 9,
+          "fromLabel": "C3",
+          "toLabel": "A4"
+        },
+        {
+          "edgeId": 19,
+          "from": 7,
+          "to": 9,
+          "fromLabel": "C3",
+          "toLabel": "A4"
+        }
+      ],
+      "possible": 4
+    },
+    {
+      "classEdgeId": 5,
+      "fromClass": 1,
+      "toClass": 3,
+      "fromLabel": "C2",
+      "toLabel": "C2 x C2",
+      "label": "C2 -> C2 x C2",
+      "fullEdges": [
+        {
+          "edgeId": 10,
+          "from": 1,
+          "to": 8,
+          "fromLabel": "C2",
+          "toLabel": "C2 x C2"
+        },
+        {
+          "edgeId": 12,
+          "from": 2,
+          "to": 8,
+          "fromLabel": "C2",
+          "toLabel": "C2 x C2"
+        },
+        {
+          "edgeId": 16,
+          "from": 3,
+          "to": 8,
+          "fromLabel": "C2",
+          "toLabel": "C2 x C2"
+        }
+      ],
+      "possible": 3
+    },
+    {
+      "classEdgeId": 7,
+      "fromClass": 3,
+      "toClass": 4,
+      "fromLabel": "C2 x C2",
+      "toLabel": "A4",
+      "label": "C2 x C2 -> A4",
+      "fullEdges": [
+        {
+          "edgeId": 18,
+          "from": 8,
+          "to": 9,
+          "fromLabel": "C2 x C2",
+          "toLabel": "A4"
+        }
+      ],
+      "possible": 1
+    }
+  ],
+  "fullLattice": [
+    {
+      "edgeId": 0,
+      "from": 0,
+      "to": 4,
+      "fromClass": 0,
+      "toClass": 2
+    },
+    {
+      "edgeId": 1,
+      "from": 0,
+      "to": 1,
+      "fromClass": 0,
+      "toClass": 1
+    },
+    {
+      "edgeId": 2,
+      "from": 0,
+      "to": 2,
+      "fromClass": 0,
+      "toClass": 1
+    },
+    {
+      "edgeId": 3,
+      "from": 0,
+      "to": 5,
+      "fromClass": 0,
+      "toClass": 2
+    },
+    {
+      "edgeId": 4,
+      "from": 0,
+      "to": 6,
+      "fromClass": 0,
+      "toClass": 2
+    },
+    {
+      "edgeId": 5,
+      "from": 0,
+      "to": 3,
+      "fromClass": 0,
+      "toClass": 1
+    },
+    {
+      "edgeId": 6,
+      "from": 0,
+      "to": 7,
+      "fromClass": 0,
+      "toClass": 2
+    },
+    {
+      "edgeId": 7,
+      "from": 0,
+      "to": 9,
+      "fromClass": 0,
+      "toClass": 4
+    },
+    {
+      "edgeId": 8,
+      "from": 0,
+      "to": 8,
+      "fromClass": 0,
+      "toClass": 3
+    },
+    {
+      "edgeId": 9,
+      "from": 4,
+      "to": 9,
+      "fromClass": 2,
+      "toClass": 4
+    },
+    {
+      "edgeId": 10,
+      "from": 1,
+      "to": 8,
+      "fromClass": 1,
+      "toClass": 3
+    },
+    {
+      "edgeId": 11,
+      "from": 1,
+      "to": 9,
+      "fromClass": 1,
+      "toClass": 4
+    },
+    {
+      "edgeId": 12,
+      "from": 2,
+      "to": 8,
+      "fromClass": 1,
+      "toClass": 3
+    },
+    {
+      "edgeId": 13,
+      "from": 2,
+      "to": 9,
+      "fromClass": 1,
+      "toClass": 4
+    },
+    {
+      "edgeId": 14,
+      "from": 5,
+      "to": 9,
+      "fromClass": 2,
+      "toClass": 4
+    },
+    {
+      "edgeId": 15,
+      "from": 6,
+      "to": 9,
+      "fromClass": 2,
+      "toClass": 4
+    },
+    {
+      "edgeId": 16,
+      "from": 3,
+      "to": 8,
+      "fromClass": 1,
+      "toClass": 3
+    },
+    {
+      "edgeId": 17,
+      "from": 3,
+      "to": 9,
+      "fromClass": 1,
+      "toClass": 4
+    },
+    {
+      "edgeId": 18,
+      "from": 8,
+      "to": 9,
+      "fromClass": 3,
+      "toClass": 4
+    },
+    {
+      "edgeId": 19,
+      "from": 7,
+      "to": 9,
+      "fromClass": 2,
+      "toClass": 4
+    }
+  ],
+  "transfers": [
+    {
+      "id": 0,
+      "type": "Bisaturated",
+      "isSaturated": true,
+      "isCosaturated": true,
+      "isBisaturated": true,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 0,
+      "fullEdgeIds": [],
+      "classEdgeCount": 0,
+      "classEdges": [],
+      "saturationFailures": [],
+      "saturatedHull": {
+        "fullEdgeIds": [],
+        "addedFullEdgeIds": [],
+        "classEdges": [],
+        "addedClassEdges": []
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [],
+        "removedFullEdgeIds": [],
+        "classEdges": [],
+        "removedClassEdges": []
+      }
+    },
+    {
+      "id": 1,
+      "type": "Saturated",
+      "isSaturated": true,
+      "isCosaturated": false,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 3,
+      "fullEdgeIds": [
+        1,
+        2,
+        5
+      ],
+      "classEdgeCount": 1,
+      "classEdges": [
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        }
+      ],
+      "saturationFailures": [],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          1,
+          2,
+          5
+        ],
+        "addedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        "addedClassEdges": []
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [],
+        "removedFullEdgeIds": [
+          1,
+          2,
+          5
+        ],
+        "classEdges": [],
+        "removedClassEdges": [
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "type": "Normal",
+      "isSaturated": false,
+      "isCosaturated": false,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 4,
+      "fullEdgeIds": [
+        1,
+        2,
+        5,
+        8
+      ],
+      "classEdgeCount": 2,
+      "classEdges": [
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 10,
+            "from": 1,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 12,
+            "from": 2,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 16,
+            "from": 3,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          1,
+          2,
+          5,
+          8,
+          10,
+          12,
+          16
+        ],
+        "addedFullEdgeIds": [
+          10,
+          12,
+          16
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [],
+        "removedFullEdgeIds": [
+          1,
+          2,
+          5,
+          8
+        ],
+        "classEdges": [],
+        "removedClassEdges": [
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "type": "Saturated",
+      "isSaturated": true,
+      "isCosaturated": false,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 4,
+      "fullEdgeIds": [
+        0,
+        3,
+        4,
+        6
+      ],
+      "classEdgeCount": 1,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        }
+      ],
+      "saturationFailures": [],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          3,
+          4,
+          6
+        ],
+        "addedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          }
+        ],
+        "addedClassEdges": []
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [],
+        "removedFullEdgeIds": [
+          0,
+          3,
+          4,
+          6
+        ],
+        "classEdges": [],
+        "removedClassEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "type": "Bisaturated",
+      "isSaturated": true,
+      "isCosaturated": true,
+      "isBisaturated": true,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 5,
+      "fullEdgeIds": [
+        0,
+        3,
+        4,
+        6,
+        18
+      ],
+      "classEdgeCount": 2,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 7,
+          "fromClass": 3,
+          "toClass": 4,
+          "label": "C2 x C2 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            18
+          ]
+        }
+      ],
+      "saturationFailures": [],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          3,
+          4,
+          6,
+          18
+        ],
+        "addedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": []
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          3,
+          4,
+          6,
+          18
+        ],
+        "removedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "removedClassEdges": []
+      }
+    },
+    {
+      "id": 5,
+      "type": "Saturated",
+      "isSaturated": true,
+      "isCosaturated": false,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 7,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "classEdgeCount": 2,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        }
+      ],
+      "saturationFailures": [],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "addedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          }
+        ],
+        "addedClassEdges": []
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [],
+        "removedFullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "classEdges": [],
+        "removedClassEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "type": "Saturated",
+      "isSaturated": true,
+      "isCosaturated": false,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 7,
+      "fullEdgeIds": [
+        1,
+        2,
+        5,
+        8,
+        10,
+        12,
+        16
+      ],
+      "classEdgeCount": 3,
+      "classEdges": [
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 5,
+          "fromClass": 1,
+          "toClass": 3,
+          "label": "C2 -> C2 x C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            10,
+            12,
+            16
+          ]
+        }
+      ],
+      "saturationFailures": [],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          1,
+          2,
+          5,
+          8,
+          10,
+          12,
+          16
+        ],
+        "addedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          }
+        ],
+        "addedClassEdges": []
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [],
+        "removedFullEdgeIds": [
+          1,
+          2,
+          5,
+          8,
+          10,
+          12,
+          16
+        ],
+        "classEdges": [],
+        "removedClassEdges": [
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "type": "Saturated",
+      "isSaturated": true,
+      "isCosaturated": false,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 8,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        18
+      ],
+      "classEdgeCount": 3,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 7,
+          "fromClass": 3,
+          "toClass": 4,
+          "label": "C2 x C2 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            18
+          ]
+        }
+      ],
+      "saturationFailures": [],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          18
+        ],
+        "addedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": []
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "removedFullEdgeIds": [
+          18
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          }
+        ],
+        "removedClassEdges": [
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "type": "Normal",
+      "isSaturated": false,
+      "isCosaturated": false,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 8,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8
+      ],
+      "classEdgeCount": 3,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 10,
+            "from": 1,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 12,
+            "from": 2,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 16,
+            "from": 3,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          10,
+          12,
+          16
+        ],
+        "addedFullEdgeIds": [
+          10,
+          12,
+          16
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [],
+        "removedFullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8
+        ],
+        "classEdges": [],
+        "removedClassEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "type": "Cosaturated",
+      "isSaturated": false,
+      "isCosaturated": true,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 9,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "classEdgeCount": 4,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 2,
+          "fromClass": 0,
+          "toClass": 4,
+          "label": "1 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            7
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 0,
+            "from": 0,
+            "to": 4,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 9,
+            "from": 4,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 11,
+            "from": 1,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 10,
+            "from": 1,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 13,
+            "from": 2,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 12,
+            "from": 2,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 3,
+            "from": 0,
+            "to": 5,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 14,
+            "from": 5,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 4,
+            "from": 0,
+            "to": 6,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 15,
+            "from": 6,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 17,
+            "from": 3,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 16,
+            "from": 3,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 6,
+            "from": 0,
+            "to": 7,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 19,
+            "from": 7,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "addedFullEdgeIds": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "removedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          }
+        ],
+        "removedClassEdges": []
+      }
+    },
+    {
+      "id": 10,
+      "type": "Cosaturated",
+      "isSaturated": false,
+      "isCosaturated": true,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 10,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        18
+      ],
+      "classEdgeCount": 5,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 2,
+          "fromClass": 0,
+          "toClass": 4,
+          "label": "1 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            7
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 7,
+          "fromClass": 3,
+          "toClass": 4,
+          "label": "C2 x C2 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            18
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 0,
+            "from": 0,
+            "to": 4,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 9,
+            "from": 4,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 11,
+            "from": 1,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 10,
+            "from": 1,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 13,
+            "from": 2,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 12,
+            "from": 2,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 3,
+            "from": 0,
+            "to": 5,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 14,
+            "from": 5,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 4,
+            "from": 0,
+            "to": 6,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 15,
+            "from": 6,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 17,
+            "from": 3,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 16,
+            "from": 3,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 6,
+            "from": 0,
+            "to": 7,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 19,
+            "from": 7,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "addedFullEdgeIds": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          18
+        ],
+        "removedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "removedClassEdges": []
+      }
+    },
+    {
+      "id": 11,
+      "type": "Saturated",
+      "isSaturated": true,
+      "isCosaturated": false,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 11,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        10,
+        12,
+        16
+      ],
+      "classEdgeCount": 4,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 5,
+          "fromClass": 1,
+          "toClass": 3,
+          "label": "C2 -> C2 x C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            10,
+            12,
+            16
+          ]
+        }
+      ],
+      "saturationFailures": [],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          10,
+          12,
+          16
+        ],
+        "addedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          }
+        ],
+        "addedClassEdges": []
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [],
+        "removedFullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          10,
+          12,
+          16
+        ],
+        "classEdges": [],
+        "removedClassEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "type": "Normal",
+      "isSaturated": false,
+      "isCosaturated": false,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 12,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        12,
+        16
+      ],
+      "classEdgeCount": 5,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 2,
+          "fromClass": 0,
+          "toClass": 4,
+          "label": "1 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            7
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 5,
+          "fromClass": 1,
+          "toClass": 3,
+          "label": "C2 -> C2 x C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            10,
+            12,
+            16
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 0,
+            "from": 0,
+            "to": 4,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 9,
+            "from": 4,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 11,
+            "from": 1,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 13,
+            "from": 2,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 3,
+            "from": 0,
+            "to": 5,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 14,
+            "from": 5,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 4,
+            "from": 0,
+            "to": 6,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 15,
+            "from": 6,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 17,
+            "from": 3,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 6,
+            "from": 0,
+            "to": 7,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 19,
+            "from": 7,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "addedFullEdgeIds": [
+          9,
+          11,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "removedFullEdgeIds": [
+          10,
+          12,
+          16
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          }
+        ],
+        "removedClassEdges": [
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "type": "Cosaturated",
+      "isSaturated": false,
+      "isCosaturated": true,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 13,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        14,
+        15,
+        19
+      ],
+      "classEdgeCount": 5,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 2,
+          "fromClass": 0,
+          "toClass": 4,
+          "label": "1 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            7
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 4,
+          "fromClass": 2,
+          "toClass": 4,
+          "label": "C3 -> A4",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            9,
+            14,
+            15,
+            19
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 11,
+            "from": 1,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 10,
+            "from": 1,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 13,
+            "from": 2,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 12,
+            "from": 2,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 17,
+            "from": 3,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 16,
+            "from": 3,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "addedFullEdgeIds": [
+          10,
+          11,
+          12,
+          13,
+          16,
+          17,
+          18
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          14,
+          15,
+          19
+        ],
+        "removedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          }
+        ],
+        "removedClassEdges": []
+      }
+    },
+    {
+      "id": 14,
+      "type": "Cosaturated",
+      "isSaturated": false,
+      "isCosaturated": true,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 14,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        14,
+        15,
+        18,
+        19
+      ],
+      "classEdgeCount": 6,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 2,
+          "fromClass": 0,
+          "toClass": 4,
+          "label": "1 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            7
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 4,
+          "fromClass": 2,
+          "toClass": 4,
+          "label": "C3 -> A4",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            9,
+            14,
+            15,
+            19
+          ]
+        },
+        {
+          "classEdgeId": 7,
+          "fromClass": 3,
+          "toClass": 4,
+          "label": "C2 x C2 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            18
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 11,
+            "from": 1,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 10,
+            "from": 1,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 13,
+            "from": 2,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 12,
+            "from": 2,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 17,
+            "from": 3,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "missingEdge": {
+            "edgeId": 16,
+            "from": 3,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "addedFullEdgeIds": [
+          10,
+          11,
+          12,
+          13,
+          16,
+          17
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          14,
+          15,
+          18,
+          19
+        ],
+        "removedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "removedClassEdges": []
+      }
+    },
+    {
+      "id": 15,
+      "type": "Cosaturated",
+      "isSaturated": false,
+      "isCosaturated": true,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 15,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17
+      ],
+      "classEdgeCount": 6,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 2,
+          "fromClass": 0,
+          "toClass": 4,
+          "label": "1 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            7
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 5,
+          "fromClass": 1,
+          "toClass": 3,
+          "label": "C2 -> C2 x C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            10,
+            12,
+            16
+          ]
+        },
+        {
+          "classEdgeId": 6,
+          "fromClass": 1,
+          "toClass": 4,
+          "label": "C2 -> A4",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            11,
+            13,
+            17
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 0,
+            "from": 0,
+            "to": 4,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 9,
+            "from": 4,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 3,
+            "from": 0,
+            "to": 5,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 14,
+            "from": 5,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 4,
+            "from": 0,
+            "to": 6,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 15,
+            "from": 6,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 6,
+            "from": 0,
+            "to": 7,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 19,
+            "from": 7,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 10,
+            "from": 1,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 11,
+            "from": 1,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 12,
+            "from": 2,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 13,
+            "from": 2,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 16,
+            "from": 3,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 17,
+            "from": 3,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "addedFullEdgeIds": [
+          9,
+          14,
+          15,
+          18,
+          19
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          16,
+          17
+        ],
+        "removedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          }
+        ],
+        "removedClassEdges": []
+      }
+    },
+    {
+      "id": 16,
+      "type": "Normal",
+      "isSaturated": false,
+      "isCosaturated": false,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 16,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16,
+        19
+      ],
+      "classEdgeCount": 6,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 2,
+          "fromClass": 0,
+          "toClass": 4,
+          "label": "1 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            7
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 4,
+          "fromClass": 2,
+          "toClass": 4,
+          "label": "C3 -> A4",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            9,
+            14,
+            15,
+            19
+          ]
+        },
+        {
+          "classEdgeId": 5,
+          "fromClass": 1,
+          "toClass": 3,
+          "label": "C2 -> C2 x C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            10,
+            12,
+            16
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 1,
+            "from": 0,
+            "to": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 11,
+            "from": 1,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 2,
+            "from": 0,
+            "to": 2,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 13,
+            "from": 2,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 5,
+            "from": 0,
+            "to": 3,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 17,
+            "from": 3,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "addedFullEdgeIds": [
+          11,
+          13,
+          17,
+          18
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19
+        ],
+        "removedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          }
+        ],
+        "removedClassEdges": []
+      }
+    },
+    {
+      "id": 17,
+      "type": "Cosaturated",
+      "isSaturated": false,
+      "isCosaturated": true,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 16,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18
+      ],
+      "classEdgeCount": 7,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 2,
+          "fromClass": 0,
+          "toClass": 4,
+          "label": "1 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            7
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 5,
+          "fromClass": 1,
+          "toClass": 3,
+          "label": "C2 -> C2 x C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            10,
+            12,
+            16
+          ]
+        },
+        {
+          "classEdgeId": 6,
+          "fromClass": 1,
+          "toClass": 4,
+          "label": "C2 -> A4",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            11,
+            13,
+            17
+          ]
+        },
+        {
+          "classEdgeId": 7,
+          "fromClass": 3,
+          "toClass": 4,
+          "label": "C2 x C2 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            18
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 0,
+            "from": 0,
+            "to": 4,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 9,
+            "from": 4,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 3,
+            "from": 0,
+            "to": 5,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 14,
+            "from": 5,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 4,
+            "from": 0,
+            "to": 6,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 15,
+            "from": 6,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 6,
+            "from": 0,
+            "to": 7,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 19,
+            "from": 7,
+            "to": 9,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "addedFullEdgeIds": [
+          9,
+          14,
+          15,
+          19
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          16,
+          17,
+          18
+        ],
+        "removedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "removedClassEdges": []
+      }
+    },
+    {
+      "id": 18,
+      "type": "Cosaturated",
+      "isSaturated": false,
+      "isCosaturated": true,
+      "isBisaturated": false,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 19,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        19
+      ],
+      "classEdgeCount": 7,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 2,
+          "fromClass": 0,
+          "toClass": 4,
+          "label": "1 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            7
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 4,
+          "fromClass": 2,
+          "toClass": 4,
+          "label": "C3 -> A4",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            9,
+            14,
+            15,
+            19
+          ]
+        },
+        {
+          "classEdgeId": 5,
+          "fromClass": 1,
+          "toClass": 3,
+          "label": "C2 -> C2 x C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            10,
+            12,
+            16
+          ]
+        },
+        {
+          "classEdgeId": 6,
+          "fromClass": 1,
+          "toClass": 4,
+          "label": "C2 -> A4",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            11,
+            13,
+            17
+          ]
+        }
+      ],
+      "saturationFailures": [
+        {
+          "edgeA": {
+            "edgeId": 8,
+            "from": 0,
+            "to": 8,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 7,
+            "from": 0,
+            "to": 9,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 10,
+            "from": 1,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 11,
+            "from": 1,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 12,
+            "from": 2,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 13,
+            "from": 2,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        },
+        {
+          "edgeA": {
+            "edgeId": 16,
+            "from": 3,
+            "to": 8,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2"
+          },
+          "edgeB": {
+            "edgeId": 17,
+            "from": 3,
+            "to": 9,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4"
+          },
+          "missingEdge": {
+            "edgeId": 18,
+            "from": 8,
+            "to": 9,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4"
+          }
+        }
+      ],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "addedFullEdgeIds": [
+          18
+        ],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": [
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ]
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          19
+        ],
+        "removedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          }
+        ],
+        "removedClassEdges": []
+      }
+    },
+    {
+      "id": 19,
+      "type": "Bisaturated",
+      "isSaturated": true,
+      "isCosaturated": true,
+      "isBisaturated": true,
+      "classificationSource": "Scott's ninfty.h: isSaturated/isCosaturated",
+      "edgeCount": 20,
+      "fullEdgeIds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "classEdgeCount": 8,
+      "classEdges": [
+        {
+          "classEdgeId": 0,
+          "fromClass": 0,
+          "toClass": 2,
+          "label": "1 -> C3",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            0,
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "classEdgeId": 1,
+          "fromClass": 0,
+          "toClass": 1,
+          "label": "1 -> C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            1,
+            2,
+            5
+          ]
+        },
+        {
+          "classEdgeId": 2,
+          "fromClass": 0,
+          "toClass": 4,
+          "label": "1 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            7
+          ]
+        },
+        {
+          "classEdgeId": 3,
+          "fromClass": 0,
+          "toClass": 3,
+          "label": "1 -> C2 x C2",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            8
+          ]
+        },
+        {
+          "classEdgeId": 4,
+          "fromClass": 2,
+          "toClass": 4,
+          "label": "C3 -> A4",
+          "included": 4,
+          "possible": 4,
+          "fullEdgeIds": [
+            9,
+            14,
+            15,
+            19
+          ]
+        },
+        {
+          "classEdgeId": 5,
+          "fromClass": 1,
+          "toClass": 3,
+          "label": "C2 -> C2 x C2",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            10,
+            12,
+            16
+          ]
+        },
+        {
+          "classEdgeId": 6,
+          "fromClass": 1,
+          "toClass": 4,
+          "label": "C2 -> A4",
+          "included": 3,
+          "possible": 3,
+          "fullEdgeIds": [
+            11,
+            13,
+            17
+          ]
+        },
+        {
+          "classEdgeId": 7,
+          "fromClass": 3,
+          "toClass": 4,
+          "label": "C2 x C2 -> A4",
+          "included": 1,
+          "possible": 1,
+          "fullEdgeIds": [
+            18
+          ]
+        }
+      ],
+      "saturationFailures": [],
+      "saturatedHull": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "addedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "addedClassEdges": []
+      },
+      "cosaturatedCore": {
+        "fullEdgeIds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "removedFullEdgeIds": [],
+        "classEdges": [
+          {
+            "classEdgeId": 0,
+            "fromClass": 0,
+            "toClass": 2,
+            "label": "1 -> C3",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              0,
+              3,
+              4,
+              6
+            ]
+          },
+          {
+            "classEdgeId": 1,
+            "fromClass": 0,
+            "toClass": 1,
+            "label": "1 -> C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              1,
+              2,
+              5
+            ]
+          },
+          {
+            "classEdgeId": 2,
+            "fromClass": 0,
+            "toClass": 4,
+            "label": "1 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              7
+            ]
+          },
+          {
+            "classEdgeId": 3,
+            "fromClass": 0,
+            "toClass": 3,
+            "label": "1 -> C2 x C2",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              8
+            ]
+          },
+          {
+            "classEdgeId": 4,
+            "fromClass": 2,
+            "toClass": 4,
+            "label": "C3 -> A4",
+            "included": 4,
+            "possible": 4,
+            "fullEdgeIds": [
+              9,
+              14,
+              15,
+              19
+            ]
+          },
+          {
+            "classEdgeId": 5,
+            "fromClass": 1,
+            "toClass": 3,
+            "label": "C2 -> C2 x C2",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              10,
+              12,
+              16
+            ]
+          },
+          {
+            "classEdgeId": 6,
+            "fromClass": 1,
+            "toClass": 4,
+            "label": "C2 -> A4",
+            "included": 3,
+            "possible": 3,
+            "fullEdgeIds": [
+              11,
+              13,
+              17
+            ]
+          },
+          {
+            "classEdgeId": 7,
+            "fromClass": 3,
+            "toClass": 4,
+            "label": "C2 x C2 -> A4",
+            "included": 1,
+            "possible": 1,
+            "fullEdgeIds": [
+              18
+            ]
+          }
+        ],
+        "removedClassEdges": []
+      }
+    }
+  ]
+}

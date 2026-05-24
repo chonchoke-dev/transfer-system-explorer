@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "groups": [
+    {
+      "label": "D4",
+      "displayName": "D_4",
+      "family": "Dihedral",
+      "order": 8,
+      "smallGroup": [
+        8,
+        3
+      ],
+      "dataPath": "data/groups/D4/group.json",
+      "status": "sat-cosat-only",
+      "summary": {
+        "group": "D4",
+        "transferSystems": 102,
+        "computedSubset": "saturated-cosaturated-union",
+        "complexity": 6,
+        "generationStatistics": null,
+        "saturated": 48,
+        "saturatedComplexity": null,
+        "cosaturated": 60,
+        "cosaturatedComplexity": null,
+        "bisaturated": 6,
+        "width": 5,
+        "runtimeMs": 6
+      }
+    },
+    {
+      "label": "A4",
+      "displayName": "A_4",
+      "family": "Alternating",
+      "order": 12,
+      "smallGroup": [
+        12,
+        3
+      ],
+      "dataPath": "data/groups/A4/group.json",
+      "status": "complete",
+      "summary": {
+        "group": "A4",
+        "transferSystems": 20,
+        "computedSubset": "all",
+        "complexity": 3,
+        "generationStatistics": null,
+        "saturated": 9,
+        "saturatedComplexity": null,
+        "cosaturated": 10,
+        "cosaturatedComplexity": null,
+        "bisaturated": 3,
+        "width": 3,
+        "runtimeMs": 0
+      }
+    },
+    {
+      "label": "D6",
+      "displayName": "D_6",
+      "family": "Dihedral",
+      "order": 12,
+      "smallGroup": [
+        12,
+        4
+      ],
+      "dataPath": "data/groups/D6/group.json",
+      "status": "sat-cosat-only",
+      "summary": {
+        "group": "D6",
+        "transferSystems": 257,
+        "computedSubset": "saturated-cosaturated-union",
+        "complexity": 10,
+        "generationStatistics": null,
+        "saturated": 122,
+        "saturatedComplexity": null,
+        "cosaturated": 142,
+        "cosaturatedComplexity": null,
+        "bisaturated": 7,
+        "width": 4,
+        "runtimeMs": 92
+      }
+    },
+    {
+      "label": "D8",
+      "displayName": "D_8",
+      "family": "Dihedral",
+      "order": 16,
+      "smallGroup": [
+        16,
+        7
+      ],
+      "dataPath": "data/groups/D8/group.json",
+      "status": "sat-cosat-only",
+      "summary": {
+        "group": "D8",
+        "transferSystems": 453,
+        "computedSubset": "saturated-cosaturated-union",
+        "complexity": 8,
+        "generationStatistics": null,
+        "saturated": 160,
+        "saturatedComplexity": null,
+        "cosaturated": 300,
+        "cosaturatedComplexity": null,
+        "bisaturated": 7,
+        "width": 7,
+        "runtimeMs": 298
+      }
+    },
+    {
+      "label": "D9",
+      "displayName": "D_9",
+      "family": "Dihedral",
+      "order": 18,
+      "smallGroup": [
+        18,
+        1
+      ],
+      "dataPath": "data/groups/D9/group.json",
+      "status": "complete",
+      "summary": {
+        "group": "D9",
+        "transferSystems": 56,
+        "computedSubset": "all",
+        "complexity": 4,
+        "generationStatistics": null,
+        "saturated": 16,
+        "saturatedComplexity": null,
+        "cosaturated": 18,
+        "cosaturatedComplexity": null,
+        "bisaturated": 4,
+        "width": 3,
+        "runtimeMs": 2
+      }
+    },
+    {
+      "label": "D10",
+      "displayName": "D_10",
+      "family": "Dihedral",
+      "order": 20,
+      "smallGroup": [
+        20,
+        4
+      ],
+      "dataPath": "data/groups/D10/group.json",
+      "status": "sat-cosat-only",
+      "summary": {
+        "group": "D10",
+        "transferSystems": 257,
+        "computedSubset": "saturated-cosaturated-union",
+        "complexity": 10,
+        "generationStatistics": null,
+        "saturated": 122,
+        "saturatedComplexity": null,
+        "cosaturated": 142,
+        "cosaturatedComplexity": null,
+        "bisaturated": 7,
+        "width": 4,
+        "runtimeMs": 155
+      }
+    },
+    {
+      "label": "D12",
+      "displayName": "D_12",
+      "family": "Dihedral",
+      "order": 24,
+      "smallGroup": [
+        24,
+        6
+      ],
+      "dataPath": null,
+      "status": "pending",
+      "summary": {
+        "group": "D12",
+        "transferSystems": null,
+        "computedSubset": "pending-correct-sat-cosat",
+        "complexity": null,
+        "generationStatistics": null,
+        "saturated": null,
+        "saturatedComplexity": null,
+        "cosaturated": null,
+        "cosaturatedComplexity": null,
+        "bisaturated": null,
+        "width": 6,
+        "runtimeMs": null
+      }
+    },
+    {
+      "label": "D14",
+      "displayName": "D_14",
+      "family": "Dihedral",
+      "order": 28,
+      "smallGroup": [
+        28,
+        3
+      ],
+      "dataPath": "data/groups/D14/group.json",
+      "status": "sat-cosat-only",
+      "summary": {
+        "group": "D14",
+        "transferSystems": 257,
+        "computedSubset": "saturated-cosaturated-union",
+        "complexity": 10,
+        "generationStatistics": null,
+        "saturated": 122,
+        "saturatedComplexity": null,
+        "cosaturated": 142,
+        "cosaturatedComplexity": null,
+        "bisaturated": 7,
+        "width": 4,
+        "runtimeMs": 239
+      }
+    },
+    {
+      "label": "D15",
+      "displayName": "D_15",
+      "family": "Dihedral",
+      "order": 30,
+      "smallGroup": [
+        30,
+        3
+      ],
+      "dataPath": "data/groups/D15/group.json",
+      "status": "complete",
+      "summary": {
+        "group": "D15",
+        "transferSystems": 381,
+        "computedSubset": "all",
+        "complexity": 7,
+        "generationStatistics": null,
+        "saturated": 42,
+        "saturatedComplexity": null,
+        "cosaturated": 44,
+        "cosaturatedComplexity": null,
+        "bisaturated": 5,
+        "width": 3,
+        "runtimeMs": 38
+      }
+    },
+    {
+      "label": "D21",
+      "displayName": "D_21",
+      "family": "Dihedral",
+      "order": 42,
+      "smallGroup": [
+        42,
+        5
+      ],
+      "dataPath": "data/groups/D21/group.json",
+      "status": "complete",
+      "summary": {
+        "group": "D21",
+        "transferSystems": 381,
+        "computedSubset": "all",
+        "complexity": 7,
+        "generationStatistics": null,
+        "saturated": 42,
+        "saturatedComplexity": null,
+        "cosaturated": 44,
+        "cosaturatedComplexity": null,
+        "bisaturated": 5,
+        "width": 3,
+        "runtimeMs": 66
+      }
+    }
+  ]
+}
