@@ -18,6 +18,7 @@ const state = {
   focusedClassEdgeId: null,
   draftClassEdgeIds: [],
   draftHistory: [],
+  lastDraftAction: "Start from the trivial transfer system.",
 };
 
 const els = {
@@ -96,6 +97,7 @@ async function loadGroup(label) {
   state.focusedClassEdgeId = null;
   state.draftClassEdgeIds = [];
   state.draftHistory = [];
+  state.lastDraftAction = "Start from the trivial transfer system.";
   state.overlayStep = null;
   state.loadingGroup = null;
   render();
@@ -337,6 +339,7 @@ function pushDraftHistory() {
       selectedTransferId: state.selectedTransferId,
       focusedClassId: state.focusedClassId,
       focusedClassEdgeId: state.focusedClassEdgeId,
+      lastDraftAction: state.lastDraftAction,
     },
   ].slice(-30);
 }
@@ -348,6 +351,7 @@ function undoDraftChange() {
   state.selectedTransferId = previous.selectedTransferId;
   state.focusedClassId = previous.focusedClassId;
   state.focusedClassEdgeId = previous.focusedClassEdgeId;
+  state.lastDraftAction = previous.lastDraftAction;
   state.draftHistory = state.draftHistory.slice(0, -1);
 }
 
@@ -356,8 +360,10 @@ function toggleDraftEdge(classEdgeId) {
   const current = new Set(state.draftClassEdgeIds);
   if (current.has(classEdgeId)) {
     current.delete(classEdgeId);
+    state.lastDraftAction = `Removed ${edgeById(classEdgeId)?.label ?? "edge"} from the draft.`;
   } else {
     current.add(classEdgeId);
+    state.lastDraftAction = `Chose ${edgeById(classEdgeId)?.label ?? "edge"} directly.`;
   }
   state.draftClassEdgeIds = [...current].sort((a, b) => a - b);
 }
@@ -368,6 +374,7 @@ function addFocusedEdgeToDraft() {
   if (current.has(state.focusedClassEdgeId)) return;
   pushDraftHistory();
   current.add(state.focusedClassEdgeId);
+  state.lastDraftAction = `Chose ${edgeById(state.focusedClassEdgeId)?.label ?? "focused edge"} directly.`;
   state.draftClassEdgeIds = [...current].sort((a, b) => a - b);
 }
 
@@ -375,6 +382,7 @@ function clearDraft() {
   if (state.draftClassEdgeIds.length === 0) return;
   pushDraftHistory();
   state.draftClassEdgeIds = [];
+  state.lastDraftAction = "Cleared chosen draft edges.";
 }
 
 function resetToTrivialTransfer() {
@@ -390,12 +398,19 @@ function resetToTrivialTransfer() {
   state.selectedTransferId = trivialTransfer.id;
   state.focusedClassId = null;
   state.focusedClassEdgeId = null;
+  state.lastDraftAction = "Reset to the trivial transfer system.";
 }
 
-function applyDraftCompletion(info) {
+function addRequiredEdgesToDraft(info) {
   if (!info.smallest) return;
+  const nextIds = info.smallest.classEdges.map((edge) => edge.classEdgeId).sort((a, b) => a - b);
   pushDraftHistory();
+  state.draftClassEdgeIds = nextIds;
   state.selectedTransferId = info.smallest.id;
+  state.lastDraftAction =
+    info.completionEdges.length === 0
+      ? `Using matching transfer #${info.smallest.id}.`
+      : `Added ${info.completionEdges.length} edge${info.completionEdges.length === 1 ? "" : "s"} required by smallest match #${info.smallest.id}.`;
 }
 
 function selectClassEdge(classEdgeId) {
@@ -769,6 +784,10 @@ function renderDraftBar() {
     .join(", ");
   const extraChips = Math.max(0, state.draftClassEdgeIds.length - 4);
   const smallestText = info.smallest ? `#${info.smallest.id}` : "none";
+  const completionLabel =
+    info.completionEdges.length === 0
+      ? "Use match"
+      : `Add ${info.completionEdges.length} required`;
   const matchLabel =
     state.groupData.summary.computedSubset && state.groupData.summary.computedSubset !== "all"
       ? "subset matches"
@@ -785,20 +804,20 @@ function renderDraftBar() {
 
   els.draftBar.innerHTML = `
     <div class="draft-bar-main">
-      <strong>Draft Mode</strong>
-      <span>${state.draftClassEdgeIds.length ? chipText : "Start from trivial transfer #0; click edges to build"}${extraChips ? `, +${extraChips}` : ""}</span>
+      <strong>Draft from #0</strong>
+      <span>${state.draftClassEdgeIds.length ? `Chosen: ${chipText}` : "Click a line to choose it"}${extraChips ? `, +${extraChips}` : ""}</span>
     </div>
     <div class="draft-bar-stats">
       <span><strong>${info.matches.length}</strong> ${matchLabel}</span>
       <span><strong>${smallestText}</strong> smallest ${typeText ? `· ${typeText}` : ""}</span>
-      <span><strong>${info.completionEdges.length}</strong> to add</span>
+      <span><strong>${info.completionEdges.length}</strong> required by match</span>
     </div>
     <div class="draft-bar-actions">
-      <button id="draftBarAddFocus" type="button" ${state.focusedClassEdgeId === null ? "disabled" : ""}>Add Focus</button>
+      <button id="draftBarAddFocus" type="button" ${state.focusedClassEdgeId === null ? "disabled" : ""}>Choose Focus</button>
       <button id="draftBarUndo" type="button" ${state.draftHistory.length === 0 ? "disabled" : ""}>Undo</button>
-      <button id="draftBarReset" type="button">Reset #0</button>
-      <button id="draftBarClear" type="button" ${state.draftClassEdgeIds.length === 0 ? "disabled" : ""}>Clear</button>
-      <button id="draftBarApply" type="button" ${info.smallest ? "" : "disabled"}>Apply</button>
+      <button id="draftBarReset" type="button">Reset to #0</button>
+      <button id="draftBarClear" type="button" ${state.draftClassEdgeIds.length === 0 ? "disabled" : ""}>Clear Chosen</button>
+      <button id="draftBarApply" type="button" ${info.smallest ? "" : "disabled"}>${completionLabel}</button>
     </div>
   `;
 
@@ -819,7 +838,7 @@ function renderDraftBar() {
     render();
   });
   document.querySelector("#draftBarApply")?.addEventListener("click", () => {
-    applyDraftCompletion(info);
+    addRequiredEdgesToDraft(info);
     render();
   });
 }
@@ -843,14 +862,14 @@ function renderDraftDetail() {
     .join("");
   const completionRows = info.completionEdges
     .slice(0, 5)
-    .map((edge) => `<div class="edge-row"><strong>${edge.label}</strong><span>needed</span></div>`)
+    .map((edge) => `<div class="edge-row completion-row"><strong>${edge.label}</strong><span>required by match #${info.smallest.id}</span></div>`)
     .join("");
   const moreCompletion =
     info.completionEdges.length > 5
       ? `<div class="muted">+ ${info.completionEdges.length - 5} more completion edges</div>`
       : "";
   const summary = info.smallest
-    ? `<div class="draft-match">
+      ? `<div class="draft-match">
         <div><strong>${info.matches.length}</strong><span>matching transfer systems</span></div>
         <div><strong>#${info.smallest.id}</strong><span>smallest valid completion</span></div>
       </div>
@@ -868,7 +887,10 @@ function renderDraftDetail() {
     .join("");
 
   els.draftDetail.innerHTML = `
-    <div class="muted">Use the Draft bar above the diagram for Undo, Reset #0, Clear, and Apply. Green dashed edges show the smallest existing transfer system that completes the draft.</div>
+    <div class="draft-note">
+      <strong>${state.lastDraftAction}</strong>
+      <span>Solid draft lines are edges you chose. Dashed teal lines are the extra class edges in the smallest existing transfer system containing your draft.</span>
+    </div>
     <div class="draft-seeds">
       ${seedRows || `<div class="muted">No draft edges yet.</div>`}
     </div>
@@ -877,7 +899,7 @@ function renderDraftDetail() {
     ${
       info.completionEdges.length
         ? `<div class="edge-list compact-list">${completionRows}${moreCompletion}</div>`
-        : `<div class="status-line ok">This draft is already a transfer system in the current dataset.</div>`
+        : `<div class="status-line ok">This draft already matches an existing transfer system in the current dataset.</div>`
     }
   `;
 
