@@ -145,6 +145,7 @@ select {
 
 .workspace {
   display: grid;
+  align-items: start;
   grid-template-columns: minmax(0, 1fr) 360px;
   gap: 16px;
 }
