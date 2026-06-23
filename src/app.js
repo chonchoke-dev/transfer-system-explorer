@@ -483,7 +483,7 @@ function renderLattice(transfer) {
     els.latticeSvg.appendChild(pathEl(edgePath(from, to, 0), "selected-focus-edge"));
   }
 
-  for (const transferEdge of transfer.classEdges) {
+  for (const transferEdge of diagramTransferEdges(transfer)) {
     const classEdge = data.classEdges.find((edge) => edge.classEdgeId === transferEdge.classEdgeId);
     const from = data.classNodes[classEdge.fromClass];
     const to = data.classNodes[classEdge.toClass];
@@ -535,6 +535,11 @@ function renderLattice(transfer) {
     }
     svg.appendChild(group);
   }
+}
+
+function diagramTransferEdges(transfer) {
+  if (state.viewMode !== "clean") return transfer.classEdges;
+  return transitiveReduction(transfer.classEdges);
 }
 
 function renderDraftEdges() {
