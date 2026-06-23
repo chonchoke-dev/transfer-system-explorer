@@ -539,7 +539,27 @@ function renderLattice(transfer) {
 
 function diagramTransferEdges(transfer) {
   if (state.viewMode !== "clean") return transfer.classEdges;
-  return transitiveReduction(transfer.classEdges);
+  return reduceTransferEdges(transfer.classEdges);
+}
+
+function reduceTransferEdges(edges) {
+  return edges.filter((edge) => !hasTransferPath(edges, edge.fromClass, edge.toClass, edge.classEdgeId));
+}
+
+function hasTransferPath(edges, startClass, targetClass, skippedClassEdgeId) {
+  const stack = [startClass];
+  const seen = new Set();
+  while (stack.length) {
+    const current = stack.pop();
+    if (current === targetClass) return true;
+    if (seen.has(current)) continue;
+    seen.add(current);
+    for (const edge of edges) {
+      if (edge.classEdgeId === skippedClassEdgeId) continue;
+      if (edge.fromClass === current) stack.push(edge.toClass);
+    }
+  }
+  return false;
 }
 
 function renderDraftEdges() {
