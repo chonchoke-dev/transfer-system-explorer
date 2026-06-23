@@ -125,7 +125,7 @@ function bindEvents() {
   });
   els.typeFilter.addEventListener("change", (event) => {
     state.typeFilter = event.target.value;
-    const first = filteredTransfers()[0];
+    const first = preferredTransfer(filteredTransfers());
     if (first) state.selectedTransferId = first.id;
     render();
   });
@@ -250,7 +250,7 @@ function renderLoading(entry) {
 function getSelectedTransfer() {
   const current = state.groupData.transfers.find((transfer) => transfer.id === state.selectedTransferId);
   if (current && filteredTransfers().some((transfer) => transfer.id === current.id)) return current;
-  return filteredTransfers()[0] ?? state.groupData.transfers[0];
+  return preferredTransfer(filteredTransfers()) ?? state.groupData.transfers[0];
 }
 
 function filteredTransfers() {
@@ -269,6 +269,19 @@ function filteredTransfers() {
     }
     return true;
   });
+}
+
+function preferredTransfer(rows) {
+  if (state.typeFilter === "Cosaturated") {
+    return rows.find((transfer) => transfer.type === "Cosaturated" && transfer.edgeCount > 0) ?? rows[0];
+  }
+  if (state.typeFilter === "Saturated") {
+    return rows.find((transfer) => transfer.type === "Saturated" && transfer.edgeCount > 0) ?? rows[0];
+  }
+  if (state.typeFilter === "Bisaturated") {
+    return rows.find((transfer) => transfer.isBisaturated && transfer.edgeCount > 0) ?? rows[0];
+  }
+  return rows[0];
 }
 
 function focusedEdgeLabel() {
@@ -657,8 +670,9 @@ function svgNode(name, attrs) {
 
 function renderTransferDetail(transfer) {
   state.selectedTransferId = transfer.id;
+  const displayedEdgeCount = diagramTransferEdges(transfer).length;
   els.transferTitle.textContent = `Transfer #${transfer.id}`;
-  els.transferMeta.textContent = `${transfer.edgeCount} full edges · ${transfer.classEdgeCount} class edges`;
+  els.transferMeta.textContent = `${transfer.edgeCount} full edges · ${transfer.classEdgeCount} class edges · ${displayedEdgeCount} shown in ${state.viewMode === "clean" ? "Hasse" : "Full"} view`;
   els.typePill.innerHTML = renderTypeLabels(transfer);
   els.typePill.className = "type-labels";
   els.edgeList.innerHTML =
