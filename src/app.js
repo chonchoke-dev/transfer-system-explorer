@@ -667,8 +667,8 @@ function curveOffset(fromClass, toClass) {
   );
   if (!hasBlocker) return 0;
   const verticalish = Math.abs(from.x - to.x) < 1.2;
-  if (verticalish) return from.x < 50 ? 9.5 : -9.5;
-  return from.x < to.x ? -7.5 : 7.5;
+  if (verticalish) return from.x < 50 ? 28 : -28;
+  return from.x < to.x ? -14 : 14;
 }
 
 function pointNearSegment(point, from, to, radius) {
