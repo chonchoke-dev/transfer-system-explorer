@@ -655,7 +655,32 @@ function pointOnCircle(from, to, radius) {
 }
 
 function curveOffset(fromClass, toClass) {
-  return 0;
+  const nodes = state.groupData?.classNodes ?? [];
+  const from = nodes[fromClass];
+  const to = nodes[toClass];
+  if (!from || !to) return 0;
+  const hasBlocker = nodes.some(
+    (node) =>
+      node.classId !== fromClass &&
+      node.classId !== toClass &&
+      pointNearSegment(node, from, to, 6.6),
+  );
+  if (!hasBlocker) return 0;
+  const verticalish = Math.abs(from.x - to.x) < 1.2;
+  if (verticalish) return from.x < 50 ? 9.5 : -9.5;
+  return from.x < to.x ? -7.5 : 7.5;
+}
+
+function pointNearSegment(point, from, to, radius) {
+  const dx = to.x - from.x;
+  const dy = to.y - from.y;
+  const lenSq = dx * dx + dy * dy;
+  if (!lenSq) return false;
+  const t = ((point.x - from.x) * dx + (point.y - from.y) * dy) / lenSq;
+  if (t < 0.08 || t > 0.92) return false;
+  const projectedX = from.x + t * dx;
+  const projectedY = from.y + t * dy;
+  return Math.hypot(point.x - projectedX, point.y - projectedY) <= radius;
 }
 
 function pathEl(d, className) {
